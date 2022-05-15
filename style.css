@@ -146,3 +146,42 @@ input[type="radio"] {
 #main .slider_control:active .button {
     background-color: #ddd;
 }
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 60%;
+        width: 70%;
+        order: 1;
+        min-width: 320px;
+    }
+
+    .button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .slider_content {
+        height: 60%;
+    }
+    .slider_titles {
+        order: 3;
+        min-width: 100%;
+        height: 15%;
+    }
+
+    .slider_item, .slider_title {
+        
+    transition: all .3s ease;
+    }
+
+    .slider_title {
+        font-size: 2.5rem;
+    }
+
+    .slider_controls {
+        order: 2;
+        min-width: 100%;
+        justify-content: center;
+        height: 15%;
+    }
+}
